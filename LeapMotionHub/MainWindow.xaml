@@ -7,6 +7,52 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        
+        <Viewport3D>
+            <Viewport3D.Camera>
+                <PerspectiveCamera
+							LookDirection="1,141.699999999996,8"
+						    Position="-1,-141.699999999996,-8"
+						    FieldOfView="60" />
+            </Viewport3D.Camera>
+
+            <Viewport3D.Children>
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <Model3DGroup>
+                            <AmbientLight>
+                                <AmbientLight.Color>
+                                    <Color>
+                                        white
+                                    </Color>
+                                </AmbientLight.Color>
+                            </AmbientLight>
+                        </Model3DGroup>
+                    </ModelVisual3D.Content>
+
+                </ModelVisual3D>
+                <ModelVisual3D>
+                    <ModelVisual3D.Content>
+                        <Model3DGroup x:Name="LeftHandModelGroup">
+                            <GeometryModel3D >
+
+                            </GeometryModel3D>
+                        </Model3DGroup>
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+                <ModelVisual3D>
+
+                    <ModelVisual3D.Content>
+                        <Model3DGroup x:Name="RightHandModelGroup">
+
+                            <GeometryModel3D >
+
+                            </GeometryModel3D>
+                        </Model3DGroup>
+
+                    </ModelVisual3D.Content>
+                </ModelVisual3D>
+
+            </Viewport3D.Children>
+        </Viewport3D>
     </Grid>
 </Window>
